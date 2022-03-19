@@ -1,0 +1,26 @@
+import {Meta, ArgsTable, Story, Canvas} from '@storybook/addon-docs'
+import {Input} from '../components/Input'
+
+<!-- give page title -->
+<Meta title="MDX/Input" component={Input}/> 
+
+# Doc Input in MDX
+
+<!-- load all the props of the component -->
+<ArgsTable of={Input} /> 
+
+<Input 
+  inputType="text" 
+  backgroundColor="gray"
+  defaultValue=""
+  borderRadius={5} />
+
+<!-- {/* <Canvas>
+  <Story name="Input MDX">
+    <Input 
+      inputType="text" 
+      backgroundColor="gray"
+      defaultValue=""
+      borderRadius={5} />
+  </Story>
+</Canvas> */} -->
